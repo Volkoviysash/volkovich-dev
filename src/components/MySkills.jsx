@@ -1,13 +1,13 @@
 import React from "react";
-import SkillsCard from "./SkillsCard";
-import design from "../images/design.png";
-import code from "../images/code.png";
-import consulting from "../images/consulting.png";
+import SkillsCard from "./UI/SkillsCard";
+import design from "../assets/images/design.png";
+import code from "../assets/images/code.png";
+import consulting from "../assets/images/consulting.png";
 
 function MySkills() {
   return (
-    <section className='my-40 md:flex md:flex-col md:justify-center md:items-center'>
-      <h1 className='text-center text-5xl font-medium text-gray-800 p-4 rounded-md md:mb-10'>
+    <section className='md:flex md:flex-col md:justify-center md:items-center'>
+      <h1 className='text-5xl py-2 m-10 text-teal-600 font-medium md:text-6xl'>
         My skills:
       </h1>
       <div className='md:flex gap-10 justify-center '>

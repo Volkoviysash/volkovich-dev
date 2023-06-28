@@ -9,7 +9,10 @@ const SkillsCard = ({ image, title, skills }) => (
     <hr className='mx-auto mt-3 border-gray-400' />
     <ul className='mt-6 space-y-2 text-gray-700 font-medium flex flex-col'>
       {skills.map((skill, index) => (
-        <span className='bg-slate-200 rounded-full px-4 py-2 text-sm font-semibold mr-2'>
+        <span
+          key={skill}
+          className='bg-slate-200 rounded-full px-4 py-2 text-sm font-semibold mr-2'
+        >
           {skill}
         </span>
       ))}

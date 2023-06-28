@@ -1,14 +1,18 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import helloPng from "../images/alex-hello.png";
+import helloPng from "../assets/images/alex-hello.png";
 import ContactMe from "./ContactMe";
 import { leftAnimation, rightAnimation } from "../animation/animation";
 import { SlLocationPin } from "react-icons/sl";
 
 function AboutMe() {
   return (
-    <motion.section initial='hidden' whileInView='visible'>
+    <motion.section
+      initial='hidden'
+      whileInView='visible'
+      className='min-h-screen'
+    >
       <div className='text-center p-5 my-10'>
         <h2 className='text-3xl py-2 mt-10 text-teal-600 font-medium md:text-6xl'>
           Front-end developer

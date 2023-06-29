@@ -2,9 +2,15 @@ import React from "react";
 import { TiLocationOutline } from "react-icons/ti";
 import { BiMailSend } from "react-icons/bi";
 
-function ContactFooter() {
+function ContactFooter({ isDarkMode }) {
   return (
-    <footer className='bg-gray-50 shadow-lg text-gray-800 h-1/2 w-screen'>
+    <footer
+      className={` shadow-lg  h-1/2 w-screen ${
+        isDarkMode
+          ? "bg-blue-gray-800 text-gray-300"
+          : "bg-gray-50 text-gray-800"
+      }`}
+    >
       <div className='container mx-auto px-4 py-8 flex flex-col items-left'>
         <h3 className='text-lg text-teal-600 font-bold mb-4'>CONTACT</h3>
         <p className='text-3xl font-bold text-left mb-8'>
@@ -17,8 +23,20 @@ function ContactFooter() {
                 <TiLocationOutline className='text-teal-600 text-3xl' />
               </div>
               <div>
-                <p className='text-gray-700 font-bold text-xl'>Location</p>
-                <p className='text-gray-700 text-xl'>Chisinau, Moldova</p>
+                <p
+                  className={` font-bold text-xl ${
+                    isDarkMode ? "text-gray-400" : "text-gray-700"
+                  }`}
+                >
+                  Location
+                </p>
+                <p
+                  className={` text-xl ${
+                    isDarkMode ? "text-gray-400" : "text-gray-700"
+                  }`}
+                >
+                  Chisinau, Moldova
+                </p>
               </div>
             </div>
           </li>
@@ -28,8 +46,20 @@ function ContactFooter() {
                 <BiMailSend className='text-teal-600 text-3xl' />
               </div>
               <div>
-                <p className='text-gray-700 font-bold text-xl'>Mail</p>
-                <p className='text-gray-700 text-xl'>volkoviysash@gmail.com</p>
+                <p
+                  className={` font-bold text-xl ${
+                    isDarkMode ? "text-gray-400" : "text-gray-700"
+                  }`}
+                >
+                  Mail
+                </p>
+                <p
+                  className={` text-xl ${
+                    isDarkMode ? "text-gray-400" : "text-gray-700"
+                  }`}
+                >
+                  volkoviysash@gmail.com
+                </p>
               </div>
             </div>
           </li>

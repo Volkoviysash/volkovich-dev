@@ -1,7 +1,7 @@
 import React from "react";
 import CertificateCard from "./UI/CertificateCard";
 
-function Certificates() {
+function Certificates({ isDarkMode }) {
   const certificates = [
     {
       title: "Front End Development Libraries",
@@ -38,7 +38,10 @@ function Certificates() {
   ];
 
   return (
-    <section className='container mx-auto mt-8 mb-14 flex flex-col justify-center items-center '>
+    <section
+      className='container mx-auto mt-8 mb-14 flex flex-col justify-center items-center'
+      id='certificates'
+    >
       <h2 className='text-5xl py-2 m-10 text-teal-600 font-medium md:text-6xl'>
         Certificates
       </h2>
@@ -50,6 +53,7 @@ function Certificates() {
             description={certificate.description}
             image={certificate.image}
             certificateURL={certificate.certificateURL}
+            isDarkMode={isDarkMode}
           />
         ))}
       </div>

@@ -16,9 +16,9 @@ function ContactFooter({ isDarkMode }) {
         <p className='text-3xl font-bold text-left mb-8'>
           Don't be shy! Hit me up! 👇
         </p>
-        <ul className='text-xl flex items-center space-x-12'>
+        <ul className='text-xl flex-col md:flex-row items-center md:space-x-12'>
           <li>
-            <div className='flex items-center space-x-2'>
+            <div className='flex items-center space-x-2 my-2'>
               <div className='flex items-center justify-center rounded-full bg-gray-100 w-16 h-16'>
                 <TiLocationOutline className='text-teal-600 text-3xl' />
               </div>
@@ -41,7 +41,7 @@ function ContactFooter({ isDarkMode }) {
             </div>
           </li>
           <li>
-            <div className='flex items-center space-x-2'>
+            <div className='flex items-center space-x-2 my-2'>
               <div className='flex items-center justify-center rounded-full bg-gray-100 w-16 h-16'>
                 <BiMailSend className='text-teal-600 text-3xl' />
               </div>

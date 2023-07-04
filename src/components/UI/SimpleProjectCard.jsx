@@ -10,7 +10,7 @@ function SimpleProjectCard({
 }) {
   return (
     <div
-      className={`max-w-sm border rounded-lg shadow mx-5 ${
+      className={`max-w-sm border rounded-lg shadow m-5 ${
         isDarkMode
           ? "bg-blue-gray-800 border-gray-700"
           : "bg-white border-gray-200"

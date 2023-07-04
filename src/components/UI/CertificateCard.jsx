@@ -10,7 +10,7 @@ function CertificateCard({
   return (
     <a href={certificateURL} target='_blank' rel='noreferrer'>
       <div
-        className={`rounded-lg shadow-md h-full p-6 transform transition-all hover:scale-105 cursor-pointer ${
+        className={`m-2 rounded-lg shadow-md h-full p-6 transform transition-all hover:scale-105 cursor-pointer ${
           isDarkMode ? "bg-blue-gray-800 text-gray-300" : "bg-white"
         }`}
       >

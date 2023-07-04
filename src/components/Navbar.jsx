@@ -12,16 +12,16 @@ function Navbar({ handleThemeToggle }) {
             onClick={handleThemeToggle}
           />
         </li>
-        <li className='px-4 font-bold cursor-pointer transition-transform hover:translate-y-1'>
+        <li className='hidden px-4 font-bold cursor-pointer transition-transform hover:translate-y-1'>
           <a href='#home'>Home</a>
         </li>
-        <li className='px-4 font-bold cursor-pointer transition-transform hover:translate-y-1'>
+        <li className='hidden px-4 font-bold cursor-pointer transition-transform hover:translate-y-1'>
           <a href='#skills'>Skills</a>
         </li>
-        <li className='px-4 font-bold cursor-pointer transition-transform hover:translate-y-1'>
+        <li className='hidden px-4 font-bold cursor-pointer transition-transform hover:translate-y-1'>
           <a href='#portfolio'>Projects</a>
         </li>
-        <li className='px-4 font-bold cursor-pointer transition-transform hover:translate-y-1'>
+        <li className='hidden px-4 font-bold cursor-pointer transition-transform hover:translate-y-1'>
           <a href='#certificates'>Certificates</a>
         </li>
         <li className='px-4'>

@@ -4,7 +4,7 @@ import design from "../assets/images/design.png";
 import code from "../assets/images/code.png";
 import consulting from "../assets/images/consulting.png";
 
-function MySkills({ isDarkMode }) {
+function MySkills() {
   const skills = [
     {
       image: design,
@@ -43,17 +43,16 @@ function MySkills({ isDarkMode }) {
       className='md:flex md:flex-col md:justify-center md:items-center'
       id='skills'
     >
-      <h1 className='text-5xl py-2 m-10 text-teal-600 font-medium md:text-6xl'>
+      <h1 className='text-5xl py-2 my-10 text-teal-600 font-medium md:text-6xl text-center'>
         My skills:
       </h1>
-      <div className='md:flex gap-10 justify-center '>
+      <div className='md:flex md:gap-10 justify-center '>
         {skills.map((skill) => (
           <SkillsCard
             key={skill.title}
             image={skill.image}
             title={skill.title}
             skills={skill.skills}
-            isDarkMode={isDarkMode}
           />
         ))}
       </div>

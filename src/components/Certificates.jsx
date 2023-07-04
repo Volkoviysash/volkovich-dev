@@ -1,7 +1,7 @@
 import React from "react";
 import CertificateCard from "./UI/CertificateCard";
 
-function Certificates({ isDarkMode }) {
+function Certificates() {
   const certificates = [
     {
       title: "Front End Development Libraries",
@@ -53,7 +53,6 @@ function Certificates({ isDarkMode }) {
             description={certificate.description}
             image={certificate.image}
             certificateURL={certificate.certificateURL}
-            isDarkMode={isDarkMode}
           />
         ))}
       </div>

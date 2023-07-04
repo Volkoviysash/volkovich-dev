@@ -9,7 +9,7 @@ import {
 
 function ContactMe() {
   return (
-    <div className='h-20 text-5xl flex justify-center gap-4 md:gap-16 pt-3 text-gray-600 items-center'>
+    <div className='h-20 text-5xl flex justify-center gap-3 md:gap-16 pt-3 text-gray-600 items-center'>
       <a
         href='https://twitter.com/TankerWolf'
         target='_blank'

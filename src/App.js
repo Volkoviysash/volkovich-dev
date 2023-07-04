@@ -7,28 +7,32 @@ import ContactFooter from "./components/ContactFooter";
 import SimpleProjects from "./components/SimpleProjects";
 import MySkills from "./components/MySkills";
 import Certificates from "./components/Certificates";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [theme, setTheme] = useState("light");
+
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [theme]);
 
   const handleThemeToggle = () => {
-    setIsDarkMode(!isDarkMode);
+    setTheme(theme === "dark" ? "light" : "dark");
   };
 
   return (
-    <div
-      className={`${
-        isDarkMode ? "bg-blue-gray-900 text-gray-200" : "bg-white "
-      }`}
-    >
+    <div className='bg-white dark:bg-blue-gray-900 dark:text-gray-200 '>
       <Navbar handleThemeToggle={handleThemeToggle} />
-      <AboutMe isDarkMode={isDarkMode} />
-      <MySkills isDarkMode={isDarkMode} />
-      <Portfolio isDarkMode={isDarkMode} />
-      <SimpleProjects isDarkMode={isDarkMode} />
-      <Certificates isDarkMode={isDarkMode} />
-      <ContactFooter isDarkMode={isDarkMode} />
+      <AboutMe />
+      <MySkills />
+      <Portfolio />
+      <SimpleProjects />
+      <Certificates />
+      <ContactFooter />
     </div>
   );
 }

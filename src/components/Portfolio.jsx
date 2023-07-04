@@ -1,7 +1,7 @@
 import React from "react";
 import MainProjectCard from "./UI/MainProjectCard";
 
-const Portfolio = ({ isDarkMode }) => {
+const Portfolio = () => {
   const projects = [
     {
       title: "Delivery MD",
@@ -55,14 +55,9 @@ const Portfolio = ({ isDarkMode }) => {
       <h2 className='text-5xl py-2 mt-10 text-teal-600 font-medium md:text-6xl'>
         Portfolio
       </h2>
-      <div className='flex-col justify-center align-middle max-w-5xl py-10'>
+      <div className='flex-col justify-center align-middle md:max-w-5xl py-10'>
         {projects.map((project, index) => (
-          <MainProjectCard
-            key={index}
-            index={index}
-            project={project}
-            isDarkMode={isDarkMode}
-          />
+          <MainProjectCard key={index} index={index} project={project} />
         ))}
       </div>
     </div>

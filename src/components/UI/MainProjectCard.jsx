@@ -2,16 +2,14 @@ import React from "react";
 import { Carousel, IconButton } from "@material-tailwind/react";
 import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
 
-function MainProjectCard({ index, project, isDarkMode }) {
+function MainProjectCard({ index, project }) {
   return (
     <div
-      className={`rounded-lg overflow-hidden shadow-lg flex flex-col md:flex-row align-middle my-10 md:h-96 ${
-        isDarkMode ? "bg-blue-gray-800 text-gray-300" : ""
-      }`}
+      className='rounded-lg overflow-hidden shadow-lg flex flex-col md:flex-row align-middle my-10 md:h-96 dark:bg-blue-gray-800 dark:text-gray-100'
       key={index}
     >
       {/* Display the image on top for small screens */}
-      <div className='w-600 md:w-3/4'>
+      <div className='md:w-3/4'>
         <Carousel
           className='rounded-xl'
           prevArrow={({ handlePrev }) => (
@@ -49,11 +47,7 @@ function MainProjectCard({ index, project, isDarkMode }) {
       </div>
       <div className='p-4 w-full md:w-1/3'>
         <h3 className='text-xl font-bold mb-2'>{project.title}</h3>
-        <p
-          className={`text-gray-700 text-base mb-4 ${
-            isDarkMode ? " text-gray-400" : ""
-          }`}
-        >
+        <p className='text-gray-700 text-base mb-4 dark:text-gray-400'>
           {project.description}
         </p>
         <div className='flex flex-col md:justify-between md:flex-row '>

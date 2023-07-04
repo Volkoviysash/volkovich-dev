@@ -1,7 +1,7 @@
 import React from "react";
 import SimpleProjectCard from "./UI/SimpleProjectCard";
 
-function SimpleProjects({ isDarkMode }) {
+function SimpleProjects() {
   const simpleProjects = [
     {
       title: "JWT-Authorization",
@@ -39,7 +39,6 @@ function SimpleProjects({ isDarkMode }) {
             description={project.description}
             image={project.image}
             codeLink={project.codeLink}
-            isDarkMode={isDarkMode}
           />
         ))}
       </section>

@@ -11,4 +11,5 @@
   </ul>
   <h2>Web version</h2>
   <p>You can visit my portfolio on <a href='https://volkovich-dev.vercel.app'>this page</a>.</p>
- 
+ <h2>Screenshot of the main page</h2>
+<img width="1440" alt="image" src="https://github.com/Volkoviysash/volkovich-dev/assets/90283311/5142eeb7-c3e5-4cef-a950-5916acc6c733">

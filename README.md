@@ -8,6 +8,7 @@
     <li>Certificates section: Highlight my professional certifications, including relevant details and accreditation.</li>
     <li>Interactive UI: Engaging user interface with smooth transitions and animations to enhance the browsing experience.</li>
     <li>Easy customization: The portfolio is modular and highly customizable, allowing for easy updates and additions to the project and certificate sections.</li>
+    <li>Dark mode: The portfolio page also has and a dark mode that can be switched with moon icon on the navbar.</li>
   </ul>
   <h2>Web version</h2>
   <p>You can visit my portfolio on <a href='https://volkovich-dev.vercel.app'>this page</a>.</p>

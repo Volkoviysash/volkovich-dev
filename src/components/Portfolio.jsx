@@ -28,7 +28,7 @@ const Portfolio = () => {
         require("../assets/projects/posts-list/posts-list5.png"),
       ],
       codeLink: "https://github.com/Volkoviysash/Posts-List-React",
-      liveLink: "",
+      liveLink: "https://posts-list-react-volkovich.vercel.app/login",
     },
     {
       title: "Online School",
@@ -43,7 +43,7 @@ const Portfolio = () => {
         require("../assets/projects/edu-school/edu-school6.png"),
       ],
       codeLink: "https://github.com/Volkoviysash/edu-school",
-      liveLink: "",
+      liveLink: "https://edu-school.vercel.app",
     },
   ];
 

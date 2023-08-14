@@ -26,7 +26,7 @@ function Navbar({ handleThemeToggle }) {
         </li>
         <li className='px-4 cursor-pointer'>
           <a
-            href='https://drive.google.com/file/d/140G3nlCixDND44pPDa7_3LzI0BFD0nsP/view?usp=share_link'
+            href='https://drive.google.com/file/d/1vUOuhOQF6vfCkDt4anAjKAL8z4X9ZuXY/view?usp=share_link'
             target='_blanc'
             className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md '
           >

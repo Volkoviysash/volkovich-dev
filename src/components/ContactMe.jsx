@@ -18,7 +18,7 @@ function ContactMe() {
         <AiFillTwitterCircle className='hover:text-teal-500 hover:ease-in' />
       </a>
       <a
-        href='https://www.linkedin.com/in/alexandr-volcovici-13981a254?trk=contact-info'
+        href='https://www.linkedin.com/in/alexandrvolcovici/'
         target='_blank'
         className='transition ease-in-out hover:scale-110 duration-300'
       >

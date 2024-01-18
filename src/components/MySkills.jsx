@@ -3,6 +3,7 @@ import SkillsCard from "./UI/SkillsCard";
 import design from "../assets/images/design.png";
 import code from "../assets/images/code.png";
 import consulting from "../assets/images/consulting.png";
+import iphone from "../assets/images/iphone.png";
 
 function MySkills() {
   const skills = [
@@ -19,10 +20,17 @@ function MySkills() {
       ],
     },
     {
-      image: code,
-      title: "Coding languages",
+      image: iphone,
+      title: "iOS stack",
       describe: "Other languages I know",
-      skills: ["JavaScript", "Python", "C#", "C", "Shell", "Others"],
+      skills: [
+        "Swift",
+        "SwiftUI",
+        "Realm",
+        "CoreData",
+        "Google Admob",
+        "Others",
+      ],
     },
     {
       image: consulting,

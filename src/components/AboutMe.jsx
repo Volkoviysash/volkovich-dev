@@ -14,7 +14,7 @@ function AboutMe() {
     >
       <div className='text-center p-5 my-10'>
         <h2 className='text-3xl py-2 mt-10 text-teal-600 font-medium md:text-6xl'>
-          Front-end developer
+          iOS developer
         </h2>
         <div className='md:flex md:justify-center md:mx-auto md:items-center'>
           <motion.div
@@ -35,8 +35,8 @@ function AboutMe() {
               Volkovich Alexandr
             </h3>
             <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto'>
-              Hi, I'm Volkovich Alexandr. A passionate Front-end React Developer
-              based in Chisinau, Moldova.
+              Hi, I'm Volkovich Alexandr. Experienced iOS developer based in
+              Chisinau, Moldova.
             </p>
           </motion.div>
         </div>
